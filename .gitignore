@@ -1,0 +1,4 @@
+.DS_Store
+.env
+src/mio-tarot-app/*
+src/mio-tarot-ui/*
