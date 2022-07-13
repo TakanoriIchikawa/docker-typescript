@@ -1,0 +1,24 @@
+// {
+//   "compilerOptions": {
+//     "allowSyntheticDefaultImports": true,
+//     "noImplicitAny": true,
+//     "module": "es6",
+//     "target": "es5",
+//     "allowJs": true
+//   },
+//   "files": ["src/index.ts"]
+// }
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "./js/dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "js/ts/**/*"
+  ]
+}

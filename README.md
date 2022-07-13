@@ -3,26 +3,46 @@
 ## 開発環境構築
 **1. Gitクローン**
 ```sh
-git clone https://github.com/TakanoriIchikawa/mio-tarot-docker.git mio-tarot
+git clone https://github.com/TakanoriIchikawa/docker-typescript.git
 ```
 
 **2. ディレクトリの移動**
 ```sh
-cd mio-tarot
+cd docker-typescript
 ```
 
-**3. セットアップスクリプトの実行**
+**3. 環境変数の設定**
 ```sh
-bash setup.sh
+cp .env.example .env
+```
+
+**4. イメージのビルド**
+```sh
+docker compose build --no-cache
+```
+
+**5. コンテナの起動ド**
+```sh
+docker compose up -d
+```
+
+**. 6. **
+```sh
+docker compose exec node npm run build
+```
+
+**. 7. **
+```sh
+docker compose exec node npm run watch
 ```
 
 ## コンテナへのアクセス
-**UIコンテナ**
-```sh
-docker compose exec ui bash
-```
-
-**APPコンテナ**
+**Webコンテナ**
 ```sh
 docker compose exec app bash
+```
+
+**Nodeコンテナ**
+```sh
+docker compose exec node bash
 ```
