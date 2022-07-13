@@ -26,12 +26,12 @@ docker compose build --no-cache
 docker compose up -d
 ```
 
-**. 6. **
+**6.**
 ```sh
 docker compose exec node npm run build
 ```
 
-**. 7. **
+**7.**
 ```sh
 docker compose exec node npm run watch
 ```
