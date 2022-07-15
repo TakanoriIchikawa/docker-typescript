@@ -46,3 +46,19 @@ docker compose exec app bash
 ```sh
 docker compose exec node bash
 ```
+
+## Vue.js動かすとき
+**1. Nodeコンテナアクセス**
+```sh
+docker compose exec node bash
+```
+
+**2. ディレクトリの移動**
+```sh
+cd vue-typescript
+```
+
+**3. Vue起動**
+```sh
+npm run dev
+```

@@ -1,24 +1,34 @@
-// {
-//   "compilerOptions": {
-//     "allowSyntheticDefaultImports": true,
-//     "noImplicitAny": true,
-//     "module": "es6",
-//     "target": "es5",
-//     "allowJs": true
-//   },
-//   "files": ["src/index.ts"]
-// }
 {
   "compilerOptions": {
     "target": "ES2019",
+    // "module": "esnext", // esnextだとimportしたときにエラーでる
     "module": "commonjs",
-    "sourceMap": true,
-    "outDir": "./js/dist",
+    "moduleResolution": "node",
     "strict": true,
     "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "resolveJsonModule": true, // jsonファイルを外部モジュールとしてインポートする
+    "declaration": true, // 推論される型を出力
+    "outDir": "./js/dist", // ビルドしたファイルの出力先
+    "allowJs": true, // jsファイルをビルドに含める設定
+    "checkJs": true,
+    // "noImplicitAny": false, // 暗黙のany型を持つ式や宣言でエラーを起こす
   },
   "include": [
     "js/ts/**/*"
   ]
+  // "files": ["test.ts"]
 }
+// {
+//   "compilerOptions": {
+//     "target": "ES2019",
+//     "module": "commonjs",
+//     "sourceMap": true,
+//     "outDir": "./js/dist",
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "forceConsistentCasingInFileNames": true
+//   },
+//   "include": [
+//     "js/ts/**/*"
+//   ]
+// }

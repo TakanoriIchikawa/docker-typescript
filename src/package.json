@@ -28,6 +28,7 @@
     "workbox-webpack-plugin": "^6.5.3"
   },
   "dependencies": {
-    "@webpack-cli/generators": "^2.5.0"
+    "@webpack-cli/generators": "^2.5.0",
+    "vue": "^3.2.36"
   }
 }

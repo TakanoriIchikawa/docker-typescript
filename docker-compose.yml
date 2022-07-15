@@ -27,3 +27,4 @@ services:
       - HOST=0.0.0.0
     ports:
       - "${UI_PORT}:3000"
+      - "50007:50007"
